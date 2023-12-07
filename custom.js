@@ -33,6 +33,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const signinWrapper = document.querySelector('.dis-popup-signin-wrapper');
+    const signupWrapper = document.querySelector('.dis-popup-signup-wrapper');
+    const popupLogin = document.querySelector('.popup_login');
+    const signinBtn = document.querySelector('.dis-popup-signin-btn');
+    const signupBtn = document.querySelector('.dis-popup-signup-btn');
+    const closeBtns = document.querySelectorAll('.dis-popup-close-btn');
+
+    function openSigninPopup() {
+        signinWrapper.style.display = 'block';
+        signupWrapper.style.display = 'none';
+        popupLogin.style.display = 'block';
+    }
+
+    function openSignupPopup() {
+        signinWrapper.style.display = 'none';
+        signupWrapper.style.display = 'block';
+        popupLogin.style.display = 'block';
+    }
+
+    function closePopup() {
+        popupLogin.style.display = 'none';
+    }
+
+    // Hide popupLogin initially
+    popupLogin.style.display = 'none';
+
+    // Add click event listeners
+    signinBtn.addEventListener('click', openSigninPopup);
+    signupBtn.addEventListener('click', openSignupPopup);
+
+    // Add click event listeners to all close buttons
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', closePopup);
+    });
+});
+
+
+
+
 
 
 
