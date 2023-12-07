@@ -60,6 +60,11 @@
     .dis-popup { 
         padding-left: 75px;
         padding-right: 75px;
+        
+        .dis-popup-signin-wrapper,
+        .dis-popup-signup-wrapper {
+            
+        }
 
         .dis-popup-signin-part,
         .dis-popup-signup-part {
@@ -434,4 +439,6 @@
         }
     }
 }
+
+
 
