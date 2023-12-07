@@ -1,7 +1,7 @@
 // document.getElementById("foy-close").addEventListener("click", () => {
 //     document.getElementById("vibe_bp_login").classList.remove("active");
 //     document.getElementById("vibe_bp_login").style.display = 'none';
-// });
+// }); 
 
 document.addEventListener("DOMContentLoaded", function () {
     // Get references to the containers and buttons
