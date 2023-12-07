@@ -17,6 +17,28 @@
   display: flex;
   gap: 25px;
 }
+.dis-popup-btns .dis-popup-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.dis-popup-btns .dis-popup-btn p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 10px 13px;
+}
+.dis-popup-btns .dis-popup-signin-btn {
+  background-color: rgba(0, 255, 132, 0.5137254902);
+  color: #f0f0ed;
+}
+.dis-popup-btns .dis-popup-signup-btn {
+  background-color: #00FF84;
+  color: #002333;
+}
 
 .popup_login {
   max-height: 500px;
