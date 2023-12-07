@@ -1,0 +1,315 @@
+/* Font Families and Sizes */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Poppins:wght@400;700&display=swap");
+/* Common CSS */
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+.container {
+  background-color: #7F7F7F;
+  height: 10000px;
+}
+
+/* Other CSS started from here */
+.popup_login {
+  max-height: 500px;
+  max-width: 1155px;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: rgba(20, 21, 33, 0.2) 0px 7px 8px -4px, rgba(20, 21, 33, 0.14) 0px 12px 17px 2px, rgba(20, 21, 33, 0.12) 0px 5px 22px 4px;
+  background: url("../images/auth-bg.png") center center/cover repeat scroll rgb(0, 35, 51);
+  position: absolute;
+  inset: 25% 25px;
+}
+.popup_login .dis-popup {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.popup_login .dis-popup .dis-popup-signin-part,
+.popup_login .dis-popup .dis-popup-signup-part {
+  width: 100%;
+  display: flex;
+  gap: 45px;
+}
+.popup_login .dis-popup .dis-popup-signin-part #dis-popup-signin-form-sec,
+.popup_login .dis-popup .dis-popup-signup-part #dis-popup-signin-form-sec {
+  padding: 100px 50px;
+}
+.popup_login .dis-popup .dis-popup-signin-part #dis-popup-signup-form-sec,
+.popup_login .dis-popup .dis-popup-signup-part #dis-popup-signup-form-sec {
+  padding: 50px;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part {
+  width: 40%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-top: -75px;
+  box-shadow: rgba(20, 21, 33, 0.2) 0px 7px 8px -4px, rgba(20, 21, 33, 0.14) 0px 12px 17px 2px, rgba(20, 21, 33, 0.12) 0px 5px 22px 4px;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part h2,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part h2 {
+  color: #002333;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-name-part,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-name-part {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-box label,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-box label {
+  color: #3c3f45;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-box .dis-popup-form-input,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-box .dis-popup-form-input {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: rgb(246, 247, 249);
+  border: 1px solid rgb(235, 235, 236);
+  margin-bottom: 25px;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-box .dis-popup-form-input input,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-box .dis-popup-form-input input {
+  letter-spacing: inherit;
+  color: rgb(0, 35, 51);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: 0px;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0px;
+  display: block;
+  width: 100%;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-box .dis-popup-form-input input::-moz-placeholder, .popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-box .dis-popup-form-input input::-moz-placeholder {
+  color: rgba(0, 35, 51, 0.4196078431);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-box .dis-popup-form-input input::placeholder,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-box .dis-popup-form-input input::placeholder {
+  color: rgba(0, 35, 51, 0.4196078431);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-forget-pass a,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-forget-pass a {
+  color: #3722d3;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-forget-pass a:hover,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-forget-pass a:hover {
+  text-decoration: underline;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: -10px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check a,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check a {
+  text-decoration: none;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check a:hover,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check a:hover {
+  text-decoration: underline;
+  color: #3722d3;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check input,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check .checkmark,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  background-color: #eee;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check .checkmark:after,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check:hover input ~ .checkmark,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check input:checked ~ .checkmark,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check input:checked ~ .checkmark:after,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check input:checked ~ .checkmark:after {
+  display: block;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check .checkmark:after,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part form .dis-popup-form-agree-part .dis-agree-check .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part .dis-popup-form-btn-portion,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part .dis-popup-form-btn-portion {
+  padding-top: 75px;
+  position: relative;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part .dis-popup-form-btn-portion img,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part .dis-popup-form-btn-portion img {
+  position: absolute;
+  top: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part .dis-popup-form-btn-portion button,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part .dis-popup-form-btn-portion button {
+  width: 100%;
+  border: 0;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part .dis-popup-form-btn-portion button input,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part .dis-popup-form-btn-portion button input {
+  background-color: rgb(0, 35, 51);
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part .dis-popup-form-btn-portion button input:hover,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part .dis-popup-form-btn-portion button input:hover {
+  background-color: #161414;
+}
+.popup_login .dis-popup .dis-popup-signin-part .dis-popup-form-part .dis-popup-form-btn-portion-signup button input,
+.popup_login .dis-popup .dis-popup-signup-part .dis-popup-form-part .dis-popup-form-btn-portion-signup button input {
+  background-color: #EBEDEF;
+  color: rgba(0, 35, 51, 0.5019607843);
+}
+.popup_login .dis-popup .dis-popup-info-part {
+  width: 50%;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.popup_login .dis-popup .dis-popup-info-part h2 {
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: -30px;
+}
+.popup_login .dis-popup .dis-popup-info-part h2 span {
+  color: #00ff84;
+}
+.popup_login .dis-popup .dis-popup-info-part p {
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.popup_login .dis-popup .dis-popup-info-part .dis-popup-info-part-btn button {
+  color: #002333;
+  background-color: #33FF9D;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.popup_login .dis-popup .dis-popup-info-part .dis-popup-info-part-or {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.popup_login .dis-popup .dis-popup-info-part .dis-popup-info-part-or .dis-or-line {
+  background-color: rgba(245, 245, 245, 0.3960784314);
+  width: 100%;
+  height: 1px;
+}
+.popup_login .dis-popup .dis-popup-info-part .dis-popup-info-part-or .dis-or-text {
+  color: #f5f5f5;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.container {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: none;
+}
+
+.container.active .content {
+  display: block;
+}
+
+.container:not(.active) .toggle-button {
+  display: block;
+}
+
+.container.active .toggle-button {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
