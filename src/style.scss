@@ -16,6 +16,11 @@
 
 
 /* Other CSS started from here */
+.dis-popup-btns {
+    display: flex;
+    gap: 25px;
+}
+
 .popup_login {
     max-height: 500px;
     max-width: 1155px;
@@ -381,23 +386,3 @@
     }
 }
 
-.container {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.content {
-    display: none;
-}
-
-.container.active .content {
-    display: block;
-}
-
-.container:not(.active) .toggle-button {
-    display: block;
-}
-
-.container.active .toggle-button {
-    display: none;
-}

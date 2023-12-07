@@ -13,6 +13,11 @@
 }
 
 /* Other CSS started from here */
+.dis-popup-btns {
+  display: flex;
+  gap: 25px;
+}
+
 .popup_login {
   max-height: 500px;
   max-width: 1155px;
@@ -291,25 +296,4 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 18px;
-}
-
-.container {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.content {
-  display: none;
-}
-
-.container.active .content {
-  display: block;
-}
-
-.container:not(.active) .toggle-button {
-  display: block;
-}
-
-.container.active .toggle-button {
-  display: none;
 }/*# sourceMappingURL=style.css.map */
