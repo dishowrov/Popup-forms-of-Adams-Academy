@@ -246,69 +246,6 @@
                         }
 
                     }
-
-
-
-                    // .dis-container {
-                    //     display: block;
-                    //     position: relative;
-                    //     padding-left: 35px;
-                    //     margin-bottom: 22px;
-                    //     cursor: pointer;
-                    //     font-size: 22px;
-                    //     -webkit-user-select: none;
-                    //     -moz-user-select: none;
-                    //     -ms-user-select: none;
-                    //     user-select: none;
-                    //   }
-
-                    //   .dis-container input {
-                    //     position: absolute;
-                    //     opacity: 0;
-                    //     cursor: pointer;
-                    //     height: 0;
-                    //     width: 0;
-                    //   }
-
-                    //   .checkmark {
-                    //     position: absolute;
-                    //     top: 0;
-                    //     left: 0;
-                    //     height: 25px;
-                    //     width: 35px;
-                    //     background-color: #eee; 
-                    //   }
-
-                    //   .dis-container:hover input ~ .checkmark {
-                    //     background-color: #ccc;
-                    //   }
-
-                    //   .dis-container input:checked ~ .checkmark {
-                    //     background-color: #2196F3;
-                    //   }
-
-
-                    //   .checkmark:after {
-                    //     content: "";
-                    //     position: absolute;
-                    //     display: none;
-                    //   }
-
-                    //   .dis-container input:checked ~ .checkmark:after {
-                    //     display: block;
-                    //   }
-
-                    //   .dis-container .checkmark:after { 
-                    //     left: 9px;
-                    //     top: 5px;
-                    //     width: 5px;
-                    //     height: 10px;
-                    //     border: solid white;
-                    //     border-width: 0 3px 3px 0;
-                    //     -webkit-transform: rotate(45deg);
-                    //     -ms-transform: rotate(45deg);
-                    //     transform: rotate(45deg);
-                    //   }
                 }
 
                 .dis-popup-form-btn-portion {
@@ -524,6 +461,146 @@
                 button {
                     background: rgb(245, 245, 245);
                 }
+            }
+
+        }
+    }
+
+    .dis-mobile-popup-form  {
+        padding: 65px 25px 35px 25px;
+
+        form {
+            .dis-popup-name-part {
+                display: flex;
+                gap: 30px;
+                justify-content: space-between;
+            }
+
+            .dis-popup-form-box {
+                label {
+                    color: #3c3f45;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+
+                .dis-popup-form-input {
+                    font-family: 'Poppins', sans-serif;
+                    box-sizing: border-box;
+                    padding: 15px;
+                    border-radius: 4px;
+                    background-color: rgb(246, 247, 249);
+                    border: 1px solid rgb(235, 235, 236);
+                    margin-bottom: 25px;
+
+                    input {
+                        letter-spacing: inherit;
+                        color: rgb(0, 35, 51);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 16px;
+                        border: 0px;
+                        box-sizing: content-box;
+                        background: none;
+                        height: 1.4375em;
+                        margin: 0px;
+                        display: block;
+                        width: 100%;
+
+                        &::placeholder {
+                            color: #0023336b;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .dis-popup-form-forget-pass {
+                a {
+                    color: #3722d3;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .dis-popup-form-agree-part {
+
+                .dis-agree-check {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-top: -10px;
+                    cursor: pointer;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+
+                    a {
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: #3722d3;
+                        }
+                    }
+
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 21px;
+                        width: 21px;
+                        background-color: #eee;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                    }
+
+                    &:hover input~.checkmark {
+                        background-color: #ccc;
+                    }
+
+                    input:checked~.checkmark {
+                        background-color: #2196F3;
+                    }
+
+                    input:checked~.checkmark:after {
+                        display: block;
+                    }
+
+                    .checkmark:after {
+                        left: 7px;
+                        top: 3px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+
             }
 
         }
