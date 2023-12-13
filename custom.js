@@ -180,20 +180,28 @@ document.addEventListener("DOMContentLoaded", function () {
     function toggleForms(signinVisible) {
         const signinForm = document.querySelector(".dis-mobile-popup-signin-form");
         const signupForm = document.querySelector(".dis-mobile-popup-signup-form");
+        const headSignin = document.querySelector(".dis-mobile-popup-head-signin");
+        const headSignup = document.querySelector(".dis-mobile-popup-head-signup");
 
         if (signinVisible) {
             signinForm.style.display = "block";
             signupForm.style.display = "none";
+            headSignin.style.display = "block";
+            headSignup.style.display = "none";
         } else {
             signinForm.style.display = "none";
             signupForm.style.display = "block";
+            headSignin.style.display = "none";
+            headSignup.style.display = "block";
         }
     }
 
-    document.querySelector(".dis-mobile-popup-btn").addEventListener("click", function () {
+    function openMobilePopup() {
         popup.style.display = "block";
-    });
+        toggleForms(true);
+    }
 
+    document.querySelector(".dis-mobile-popup-btn").addEventListener("click", openMobilePopup);
     document.querySelector(".dis-mobile-popup-signup-btn").addEventListener("click", function () {
         toggleForms(false);
     });
