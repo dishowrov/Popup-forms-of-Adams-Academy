@@ -341,4 +341,21 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 18px;
+}
+
+.dis-mobile-popup-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.dis-mobile-popup-btn p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 10px 13px;
+  background-color: #00FF84;
+  color: #002333;
 }/*# sourceMappingURL=style.css.map */

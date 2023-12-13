@@ -13,13 +13,13 @@
     background-color: #7F7F7F;
     height: 10000px;
 }
- 
+
 
 /* Other CSS started from here */
 .dis-popup-btns {
     display: flex;
     gap: 25px;
- 
+
     .dis-popup-btn {
         cursor: pointer;
         border-radius: 5px;
@@ -27,8 +27,8 @@
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-         
-        p{
+
+        p {
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             font-size: 17px;
@@ -38,7 +38,7 @@
 
     .dis-popup-signin-btn {
         background-color: #00ff8483;
-        color: #ffffff; 
+        color: #ffffff;
     }
 
     .dis-popup-signup-btn {
@@ -56,8 +56,8 @@
     background: url("../images/auth-bg.png") center center / cover repeat scroll rgb(0, 35, 51);
     position: absolute;
     inset: 25% 25px;
-   
-    .dis-popup { 
+
+    .dis-popup {
         padding-left: 75px;
         padding-right: 75px;
 
@@ -196,58 +196,58 @@
                                     color: #3722d3;
                                 }
                             }
-                          
+
                             input {
-                              position: absolute;
-                              opacity: 0;
-                              cursor: pointer;
-                              height: 0;
-                              width: 0;
-                            }
-                          
-                            .checkmark {
-                              position: absolute;
-                              top: 0;
-                              left: 0;
-                              height: 21px;
-                              width: 21px;
-                              background-color: #eee;
-                          
-                              &:after {
-                                content: "";
                                 position: absolute;
-                                display: none;
-                              }
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
                             }
-                          
-                            &:hover input ~ .checkmark {
-                              background-color: #ccc;
+
+                            .checkmark {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 21px;
+                                width: 21px;
+                                background-color: #eee;
+
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                }
                             }
-                          
-                            input:checked ~ .checkmark {
-                              background-color: #2196F3;
+
+                            &:hover input~.checkmark {
+                                background-color: #ccc;
                             }
-                          
-                            input:checked ~ .checkmark:after {
-                              display: block;
+
+                            input:checked~.checkmark {
+                                background-color: #2196F3;
                             }
-                          
+
+                            input:checked~.checkmark:after {
+                                display: block;
+                            }
+
                             .checkmark:after {
-                              left: 7px;
-                              top: 3px;
-                              width: 5px;
-                              height: 10px;
-                              border: solid white;
-                              border-width: 0 3px 3px 0;
-                              -webkit-transform: rotate(45deg);
-                              -ms-transform: rotate(45deg);
-                              transform: rotate(45deg);
+                                left: 7px;
+                                top: 3px;
+                                width: 5px;
+                                height: 10px;
+                                border: solid white;
+                                border-width: 0 3px 3px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
                             }
-                          }
-                          
+                        }
+
                     }
 
-                    
+
 
                     // .dis-container {
                     //     display: block;
@@ -261,7 +261,7 @@
                     //     -ms-user-select: none;
                     //     user-select: none;
                     //   }
-                      
+
                     //   .dis-container input {
                     //     position: absolute;
                     //     opacity: 0;
@@ -269,7 +269,7 @@
                     //     height: 0;
                     //     width: 0;
                     //   }
-                      
+
                     //   .checkmark {
                     //     position: absolute;
                     //     top: 0;
@@ -278,26 +278,26 @@
                     //     width: 35px;
                     //     background-color: #eee; 
                     //   }
-                      
+
                     //   .dis-container:hover input ~ .checkmark {
                     //     background-color: #ccc;
                     //   }
-                      
+
                     //   .dis-container input:checked ~ .checkmark {
                     //     background-color: #2196F3;
                     //   }
-                      
+
 
                     //   .checkmark:after {
                     //     content: "";
                     //     position: absolute;
                     //     display: none;
                     //   }
-                      
+
                     //   .dis-container input:checked ~ .checkmark:after {
                     //     display: block;
                     //   }
-                      
+
                     //   .dis-container .checkmark:after { 
                     //     left: 9px;
                     //     top: 5px;
@@ -435,5 +435,20 @@
     }
 }
 
+.dis-mobile-popup-btn {
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 
-
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        padding: 10px 13px;    
+        background-color: #00FF84;
+        color: #002333;    
+    }
+}
