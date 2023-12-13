@@ -70,6 +70,47 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Initial setup: hide the popup and signup form
+    const popup = document.querySelector(".dis-mobile-popup");
+    popup.style.display = "none";
+    document.querySelector(".dis-mobile-popup-signup-form").style.display = "none";
+
+    // Function to toggle between signin and signup forms
+    function toggleForms(signinVisible) {
+        const signinForm = document.querySelector(".dis-mobile-popup-signin-form");
+        const signupForm = document.querySelector(".dis-mobile-popup-signup-form");
+
+        if (signinVisible) {
+            signinForm.style.display = "block";
+            signupForm.style.display = "none";
+        } else {
+            signinForm.style.display = "none";
+            signupForm.style.display = "block";
+        }
+    }
+
+    // Event listener for the main popup button
+    document.querySelector(".dis-mobile-popup-btn").addEventListener("click", function () {
+        popup.style.display = "block";
+    });
+
+    // Event listener for the signup button
+    document.querySelector(".dis-mobile-popup-signup-btn").addEventListener("click", function () {
+        toggleForms(false);
+    });
+
+    // Event listener for the signin button
+    document.querySelector(".dis-mobile-popup-signin-btn").addEventListener("click", function () {
+        toggleForms(true);
+    });
+
+    // Event listener for the close button
+    document.querySelector(".dis-mobile-popup-close-btn").addEventListener("click", function () {
+        popup.style.display = "none";
+    });
+});
+
 
 
 
