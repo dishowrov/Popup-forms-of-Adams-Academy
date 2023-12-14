@@ -41,8 +41,9 @@
 }
 
 .popup_login {
-  display: block;
-  max-height: 500px;
+  visibility: visible;
+  min-height: 500px;
+  max-height: 100%;
   max-width: 1155px;
   margin: 0 auto;
   border-radius: 4px;
@@ -349,15 +350,15 @@
 }
 
 .dis-mobile-popup {
-  display: none;
+  visibility: hidden;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .dis-popup-btns {
     display: none;
   }
   .popup_login {
-    display: none;
+    visibility: hidden;
   }
   .dis-mobile-open-popup-btn {
     display: block;
@@ -379,7 +380,7 @@
     -o-border-radius: 5px;
   }
   .dis-mobile-popup {
-    display: block;
+    visibility: visible;
     background-color: #fff;
     position: relative;
   }
